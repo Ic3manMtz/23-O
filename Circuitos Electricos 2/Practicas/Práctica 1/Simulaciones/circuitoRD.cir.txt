@@ -1,0 +1,12 @@
+Circuito RC
+
+r1 1 2 1000
+c1 2 0 0.1u
+*(inicio amplitud retraso subida bajada anchoPulso periodo)
+v1 1 0 pulse=(0 5 0 0 0 0.05m 0.1m)
+
+.control
+tran 5u 0.8m
+plot v(2) v(1)
+.endc
+.end
