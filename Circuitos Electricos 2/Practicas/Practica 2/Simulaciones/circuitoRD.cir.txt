@@ -1,0 +1,15 @@
+Circuito RCL
+
+r1 1 2 10000
+l1 2 3 153m
+c1 3 0 0.1u
+*(inicio amplitud retraso subida bajada anchoPulso periodo)
+v1 1 0 pulse=(0 5 0 0 0 5m 10m)
+
+.control
+tran 5u 5m
+plot v(1) v(3)
+.endc
+.end
+
+
