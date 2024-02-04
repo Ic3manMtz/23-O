@@ -1,0 +1,21 @@
+Circuito rectificador de media onda
+
+.MODEL 1N4003 D
++IS=2.9e-06 RS=0.03 N=4.0 BV=250 IBV=5e-08 CJO=1e-09
++VJ=0.7 M=0.5 FC=0.5 TT=1e-09
++KF=0 AF=1
+
+* This is the sinusoidal input voltage
+* source of peak value 10 V @ 60 Hz frequency.
+Vs 1 0 dc 0 sin(0 5 60)
+D1 1 2 1N4003
+R1 2 3 1k
+C1 3 0 10n
+
+.control
+tran 0.01m 80m
+plot v(1) v(3)
+.endc
+.end
+
+
