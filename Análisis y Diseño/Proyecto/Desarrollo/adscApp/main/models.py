@@ -15,4 +15,11 @@ class Banners(models.Model):
 # Create your models here.
 class Servicio(models.Model):
     title=models.CharField(max_length=150)
+    img=models.ImageField(upload_to="services/", null=True)
     detail=models.TextField()
+
+    def __str__(self):
+        return self.title
+    
+    def image_tag(self):
+        return mark_safe('<img src="%s" width="100" />' % (self.img.url))

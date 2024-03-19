@@ -1,0 +1,34 @@
+.custom-navbar {
+    background-color: rgba(239, 242, 239, 1);
+}
+
+body {
+    background-color: rgba(76, 75, 71, 1)
+}
+
+.section-heading {
+    color: rgba(239, 242, 239, 1);
+}
+
+.card {
+    background-color: rgba(239, 242, 239, 1);
+}
+
+.card-title,
+.card-text {
+    color: rgba(76, 75, 71, 1)
+}
+
+.btn-primary {
+    background-color: rgba(146, 135, 116, 1);
+    border-color: rgba(146, 135, 116, 1); /* Si quieres también cambiar el color del borde */
+    color: rgba(239, 242, 239, 1);; /* Cambia el color del texto a blanco para asegurar la legibilidad */
+}
+
+footer {
+    background-color: rgba(239, 242, 239, 1);
+    height: 1%; /* Ajusta la altura como un porcentaje del tamaño de su contenedor */
+
+    
+}
+
